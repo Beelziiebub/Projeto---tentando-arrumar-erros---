@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agendamentoAtendimento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agendamento_de_atendimento"
+        android:textSize="30sp"
+        android:textColor="#1E88E5"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Data do Atendimento -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione a Data:"
+        android:textSize="18sp"
+        android:textColor="#555"
+        android:layout_marginBottom="8dp"/>
+
+    <DatePicker
+        android:id="@+id/txtAGEData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Tipo de Atendimento -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o Tipo de Atendimento:"
+        android:textSize="18sp"
+        android:textColor="#555"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/txtAGETipoAtendimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="300dp" />
+
+    <!-- Hora do Atendimento -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione a Hora:"
+        android:textSize="18sp"
+        android:textColor="#555"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/txtAGEHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="300dp" />
+
+    <!-- Observações -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Observações:"
+        android:textSize="18sp"
+        android:textColor="#555"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/txtAGEObservacoes"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Digite aqui suas observações (opcional)"
+        android:gravity="top|start"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:inputType="textMultiLine"/>
+
+    <!-- Botão Agendar -->
+    <Button
+        android:id="@+id/btAGEAgendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agendar Atendimento"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:background="#1E88E5"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

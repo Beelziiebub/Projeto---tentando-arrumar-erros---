@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/TelaCompraVendaAluguel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!-- Imagem do Produto (carro ou outro) -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/terreno"
+            android:contentDescription="Imagem do Produto" />
+
+        <!-- Título da Tela -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Escolha a Opção de Transação:"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+        <!-- Opções de Transação (Compra, Aluguel, Venda) -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <RadioButton
+                android:id="@+id/rbCompra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compra"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbAluguel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aluguel"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbVenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venda"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <!-- Campo para Descrição do Produto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Descrição do Produto:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtDescricaoProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Ex: Descrição do imóvel" />
+
+        <!-- Campo para Preço -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Preço:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtPrecoProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="R$ 0,00" />
+
+        <!-- Selecione o Método de Pagamento -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Escolha o Método de Pagamento:"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbCartao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cartão de Crédito"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbPix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIX"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <!-- Campo para Informações do Cartão -->
+        <LinearLayout
+            android:id="@+id/layoutCartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número do Cartão:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtNumeroCartao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="Número do Cartão" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data de Validade:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtValidadeCartao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="MM/AA" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código de Segurança (CVV):"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtCvvCartao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="CVV" />
+        </LinearLayout>
+
+        <!-- Campo para Chave PIX -->
+        <LinearLayout
+            android:id="@+id/layoutPix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chave PIX:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtChavePix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="Ex: exemplo@pix.com" />
+        </LinearLayout>
+
+        <!-- Botão para Finalizar Transação -->
+        <Button
+            android:id="@+id/btnFinalizarCompra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finalizar Transação"
+            android:textSize="25sp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+</ScrollView>

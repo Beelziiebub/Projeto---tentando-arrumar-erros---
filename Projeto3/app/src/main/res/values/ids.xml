@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radioGroupTransacao" type="id" />
+    <item name="radioGroupPagamento" type="id" />
+    <item name="createAccount" type="id">1</item>
+</resources>

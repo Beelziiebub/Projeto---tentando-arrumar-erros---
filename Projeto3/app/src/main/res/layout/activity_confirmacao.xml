@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/confirmacaoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Título da tela -->
+    <TextView
+        android:id="@+id/txtConfirmacaoTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmação de Transação"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <!-- Descrição do produto ou serviço -->
+    <TextView
+        android:id="@+id/txtConfirmacaoDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição: Produto X"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Preço do produto ou serviço -->
+    <TextView
+        android:id="@+id/txtConfirmacaoPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preço: R$ 100,00"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Tipo de transação (Compra, Venda ou Aluguel) -->
+    <TextView
+        android:id="@+id/txtConfirmacaoTipoTransacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Transação: Compra"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Método de pagamento (Cartão ou Pix) -->
+    <TextView
+        android:id="@+id/txtConfirmacaoMetodoPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Método de Pagamento: Cartão"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botão para Confirmar a transação -->
+    <Button
+        android:id="@+id/btConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Botão para Cancelar a transação -->
+    <Button
+        android:id="@+id/btCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:textSize="20sp"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Projeto</string>
+    <string name="agendamento_de_atendimento" />
+    <string name="criar_minha_conta">Criar minha conta!</string>
+    <string name="logo_da_empresa">2</string>
+    <string name="tela_de_login">Tela de Login</string>
+</resources>
